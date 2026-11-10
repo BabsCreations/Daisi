@@ -1,0 +1,12 @@
+node_modules/
+.next/
+out/
+.env*
+!.env.example
+npm-debug.log*
+.local-runtime/
+preview-site/
+preview-http.log
+preview-http.err.log
+.local-runtime/
+*.tsbuildinfo
