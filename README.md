@@ -34,7 +34,7 @@ Most site copy is in `src/data/content.ts` and the page files. Replace the portr
 
 ## Required information before launch
 
-1. Production URL. Production builds use `https://daisi.name.ng` for canonical metadata, sitemap URLs and the robots sitemap reference. Local development uses `http://localhost:3000` by default; `NEXT_PUBLIC_SITE_URL` is an optional local override.
+1. Production URL. Production builds use `https://www.daisi.name.ng`, the final destination of the domain redirect, for canonical metadata, sitemap URLs and the robots sitemap reference. Local development uses `http://localhost:3000` by default; `NEXT_PUBLIC_SITE_URL` is an optional local override.
 2. Confirm client permission for supplied project details and screenshots.
 3. Contact form activation and delivery. The contact form posts to FormSubmit at publishingmadeeasy1@gmail.com. Confirm the first-use activation email from FormSubmit, then send a real test submission and check the inbox and spam folder. FormSubmit handles delivery; this site does not store submissions.
 4. Confirm the public email addresses and LinkedIn profile are correct. A genuine portrait can be added if Daisi wants one displayed.
@@ -44,12 +44,12 @@ Calendly and Upwork use the supplied links. The contact email addresses and Link
 
 ## Deploy
 
-This is a standard Next.js application and can be deployed to Vercel or another Node.js host that supports Next.js. Deploy from this project directory. Production sitemap, robots and canonical URLs use `https://daisi.name.ng` automatically; no URL environment variable is required in Vercel. After deployment, open `/sitemap.xml` and `/robots.txt` on the production domain and submit `https://daisi.name.ng/sitemap.xml` in Google Search Console. No secret environment variables are currently needed.
+This is a standard Next.js application and can be deployed to Vercel or another Node.js host that supports Next.js. Deploy from this project directory. Production sitemap, robots and canonical URLs use `https://www.daisi.name.ng` automatically; no URL environment variable is required in Vercel. After deployment, open `/sitemap.xml` and `/robots.txt` on the production domain and submit `https://www.daisi.name.ng/sitemap.xml` in Google Search Console. No secret environment variables are currently needed.
 
 ## Search setup
 
 - `src/app/sitemap.ts` serves `/sitemap.xml`; `src/app/robots.ts` serves `/robots.txt`.
-- Submit `https://daisi.name.ng/sitemap.xml` in Google Search Console and Bing Webmaster Tools after deployment.
+- Submit `https://www.daisi.name.ng/sitemap.xml` in Google Search Console and Bing Webmaster Tools after deployment.
 - The robots policy allows public search crawlers, permits OAI-SearchBot, Claude-SearchBot and Claude-User, and disallows the training crawlers GPTBot and ClaudeBot. Review the policy against the chosen host/CDN rules before launch.
 - Add Search Console / Bing verification values through their supported verification method after obtaining real values. Do not paste account secrets into source code.
 - `NEXT_PUBLIC_GA_ID` and `NEXT_PUBLIC_CLARITY_ID` are placeholders only; analytics scripts are not active. Add a consent/privacy approach appropriate to the audience before enabling analytics.
